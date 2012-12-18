@@ -1,8 +1,7 @@
 def buttonForSignIn
   
-  btn_sign_in = UIButton.buttonWithType(UIButtonTypeCustom).tap do |btn|
+  btn_sign_in = UIButton.buttonWithType(UIButtonTypeRoundedRect).tap do |btn|
    btn.frame  = [[15,280],[295,40]]
-   btn.setBackgroundImage(UIImage.imageNamed('btnBrown'),forState:UIControlStateNormal)
    btn.setTitle("I have an Account, Sign-In to Book", forState:UIControlStateNormal)
    btn.setTitle("is Highligted", forState:UIControlStateHighlighted)
    btn.titleLabel.font = UIFont.fontWithName("HelveticaNeue-Light" ,size:18)
